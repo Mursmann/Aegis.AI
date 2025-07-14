@@ -1,5 +1,5 @@
 # Aegis.AI – Neural Protection Engine
-
+![Logo](LOGO.jpg)
 Aegis.AI is an intelligent, adaptive host-based intrusion detection system (HIDS) designed to protect both servers and personal computers from abnormal or malicious behavior using machine learning.
 
 ## 🔒 Project Summary
