@@ -88,4 +88,4 @@ Contributions and testing are welcome — please open issues or pull requests.
 
 ## 📜 License
 
-This project is open-source under the **MIT License**.
+This project is open-source under the **M_W_PROGECT**.
