@@ -11,14 +11,14 @@ from tensorflow.keras.layers import Dense
 import psutil
 import time
 import lief
-import logging  # Для логирования ошибок
+import logging  
 
-# Настройка логирования с выводом в консоль
+
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.StreamHandler()  # Вывод в консоль
+        logging.StreamHandler()  
     ]
 )
 def analyze_python_file(file_path):
