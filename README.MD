@@ -58,7 +58,8 @@ Custom simulation modules are planned to allow safe testing of malicious pattern
 - [x] Data collection module  
 - [x] Feature extraction & labeling  
 - [x] Initial model training (Random Forest)  
-- [ ] Neural network integration  
+- [X] Neural network integration 
+- [X] Transformer integration
 - [ ] Interface for end users (GUI/CLI)  
 - [ ] Cross-platform installer and daemon service  
 - [ ] Live response module (auto-quarantine or alerts)  
