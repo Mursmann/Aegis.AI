@@ -19,7 +19,7 @@ logging.basicConfig(
 )
 
 def train_models():
-    EMBER_PATH = "C:/Users/Vovaaaan/Downloads/ember_dataset_2018_2/ember2018"
+    EMBER_PATH = "/Downloads/ember_dataset_2018_2/ember2018"
     X_TRAIN_PATH = os.path.join(EMBER_PATH, "X_train.dat")
     X_TEST_PATH = os.path.join(EMBER_PATH, "X_test.dat")
 
@@ -120,4 +120,5 @@ def train_models():
     logging.info("✅ Models saved.")
 
 if __name__ == "__main__":
+
     train_models()
