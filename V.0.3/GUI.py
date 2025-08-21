@@ -132,7 +132,7 @@ class DirectoryChecker:
         splash.overrideredirect(True)
         splash.geometry("700x400+300+250")
 
-        image_path = "C:/Users/Vovaaaan/Downloads/NewLOGO.jpg"
+        image_path = "/Downloads/NewLOGO.jpg"
         if os.path.exists(image_path):
             image = Image.open(image_path)
             photo = ImageTk.PhotoImage(image)
@@ -150,4 +150,5 @@ class DirectoryChecker:
 root = tk.Tk()
 app = DirectoryChecker(root)
 app.show_splash_screen()
+
 root.mainloop()
