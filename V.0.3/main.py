@@ -12,8 +12,9 @@ def main(directory=''):
         print("Training mode is disabled in this version.")
         sys.exit(1)
     elif args.mode == 'monitor':
-        monitor_dir = args.dir if args.dir else "C:/Users/Vovaaaan/Downloads/"
+        monitor_dir = args.dir if args.dir else "/Downloads/"
         monitor_system(monitor_dir)
 
 if __name__ == "__main__":
+
     main()
