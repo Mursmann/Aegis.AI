@@ -29,7 +29,7 @@ def monitor_system():
         logging.error(f"Error loading models: {e}")
         return
 
-    MONITOR_DIR = "C:/Users/Vovaaaan/Downloads"
+    MONITOR_DIR = "Downloads"
     checked_files = set()
     MINING_POOLS = ["pool.minergate.com", "xmr.pool.minergate.com", "pool.nicehash.com"]
     PE_EXTENSIONS = [".exe", ".dll"]
@@ -105,4 +105,5 @@ def monitor_system():
                     logging.error(f"Error analyzing process {proc.info['name']}: {e}")
         except Exception as e:
             logging.error(f"Monitoring error: {e}")
+
         time.sleep(10)
