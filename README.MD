@@ -50,17 +50,37 @@ Run as a lightweight HIDS agent:
   1. ML screening (fast classification).  
   2. Transformer analysis (deep confirmation).  
 
-📌 **Example snippet (detection_engine.py)**:
+---
 
-`python
-from src.hf_detector import HFDetector
-from src.detection_engine import ml_screening
-import psutil
+📅 Roadmap
 
-detector = HFDetector(model_name="deepset/gelectra-base-malware")
+[x] Implement ML anomaly detection (XGBoost, Random Forest).
 
-for proc in psutil.process_iter(['pid', 'cpu_percent']):
-    if ml_screening(extract_process_features(proc.info['pid'])):
-        label, score = detector.scan_process(proc.info['pid'])
-        if label == "MALWARE":
-            print(f"Threat confirmed: Process {proc.info['pid']} ({score})")
+[x] File & process monitoring (watchdog, psutil).
+
+[ ] Transformer-based deep analysis (Hugging Face).
+
+[ ] GUI for visualization & alerts.
+
+[ ] Live response (terminate process, quarantine file).
+
+[ ] Support additional datasets & fine-tuning.
+
+[ ] Optimize for low-resource systems.
+
+
+
+---
+
+📚 Resources
+
+Datasets: UNSW-NB15, ADFA-LD, Ember, VirusShare.
+
+Models: Hugging Face – deepset/gelectra-base-malware, WhiteRabbitNeo/neo-malware-analyzer.
+
+Tools: pefile, psutil, watchdog.
+
+
+
+---
+
